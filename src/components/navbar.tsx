@@ -2,7 +2,7 @@
 
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { links } from "@/lib/data";
-import Link from "next/link";
+
 
 export default function Navbar() {
 
@@ -18,7 +18,7 @@ export default function Navbar() {
               key={link.hash}
               className={`h-3/4 flex items-center justify-center `}
             >
-              <Link
+              <a
                 href={link.hash}
                 onClick={() => {
                   setActiveSection(link.name);
@@ -30,7 +30,7 @@ export default function Navbar() {
                 }`}
               >
                 {link.name}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
