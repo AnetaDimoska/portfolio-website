@@ -1,16 +1,24 @@
-'use client'
+"use client";
 import { useSectionInView } from "@/hooks/useSectionInView";
 import { useTheme } from "@/context/theme-context";
 import SectionHeading from "./section-heading";
 import Image from "next/image";
-import profileImage from "../../public/aneta-profile.jpeg"
+import profileImage from "../../public/aneta-profile.jpeg";
+import { useTranslations } from "next-intl";
+
 
 export default function About() {
-  const {ref} = useSectionInView("About")
+  const t = useTranslations("about");
+  const { ref } = useSectionInView(t("section_name"));
   const { theme } = useTheme();
+
   return (
-    <section ref={ref} id="about" className=" mt-24 md:mt-32 relative lg:static scroll-mt-32">
-      <SectionHeading>About me</SectionHeading>
+    <section
+      ref={ref}
+      id="about"
+      className=" mt-24 md:mt-32 relative lg:static scroll-mt-32"
+    >
+      <SectionHeading>{t("heading")}</SectionHeading>
       <div className=" mt-3 lg:mt-20  xxl:w-11/12 xxxl:w-[68%] mx-auto relative z-1 p-4 lg:p-0">
         <div className="bg-[#fbe2e3] blur-[14rem] absolute top-0 left-0 -z-10 w-full h-full dark:bg-[#4b393a]"></div>
         <div className="flex flex-col-reverse  lg:flex-row">
@@ -29,55 +37,60 @@ export default function About() {
               ></path>
               <defs>
                 <linearGradient id="SvgjsLinearGradient1042">
-                  <stop stop-color={theme === 'light' ? "#e1d3ec" : "#6d5d7a"} offset="0"></stop>
-                  <stop stop-color={theme === 'light' ? "#f4edfa" : "#534e58"}offset="1"></stop>
+                  <stop
+                    stop-color={theme === "light" ? "#e1d3ec" : "#6d5d7a"}
+                    offset="0"
+                  ></stop>
+                  <stop
+                    stop-color={theme === "light" ? "#f4edfa" : "#534e58"}
+                    offset="1"
+                  ></stop>
                 </linearGradient>
               </defs>
             </svg>
             <p className="text-lg">
-              My journey began three years ago, when I transitioned from a
-              background in Sociology to pursue a career in web development.
-              During my work experience, I have developed an{" "}
-              <strong>online learning platform,</strong> mentored interns,{" "}
-              <strong>maintained and updated</strong> existing projects. <br />
+              {t.rich("content_one", {
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
             <p className="text-lg mt-2">
-              My technical skills are complemented by strong soft skills,
-              including effective teamwork, excellent communication,{" "}
-              <strong>flexibility</strong>, adaptability, and a{" "}
-              <strong>continuous learning mindset</strong>. My{" "}
-              <strong>curiosity</strong> and{" "}
-              <strong>problem-solving abilities</strong> enable me to tackle
-              challenges creatively and efficiently.
+              {t.rich("content_two", {
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
             <p className="text-lg mt-4">
-              Outside of coding, I enjoy activities that fulfill me, such as{" "}
-              <strong>dancing</strong> and <strong>writing</strong>. Combining
-              these two passions lead me to{" "}
-              <a
-                href="https://www.amazon.co.uk/HowExpert-Guide-Belly-Dancing-Learn-ebook/dp/B08BJGGP45/ref=sr_1_1?dib=eyJ2IjoiMSJ9.3FcfThAJmmrI7pkTUl74Zg.dvLZv-OUxULqe61h3dHSEbW1hYf1C6Hb_TTqputaXIM&dib_tag=se&qid=1718149373&refinements=p_27%3AAneta+Dimoska&s=books&sr=1-1"
-                target="_blank"
-                className="text-blue-600 hover:text-blue-800"
-              >
-                write and publish my guide book on Amazon
-              </a>
-              , which I am very proud of. Additionally, my{" "}
-              <strong>love for teaching</strong> inspired me to hold an online
-              webinar on topic{" "}
-              <a
-                href="https://www.youtube.com/watch?v=MR3I0pCZLcY"
-                target="_blank"
-                className="text-blue-600 hover:text-blue-800"
-              >
-                What is the Role of a Front-End Developer in a Company
-              </a>
+              {t.rich("content_three", {
+                a0: (chunks) => (
+                  <a
+                    target="_blank"
+                    className="text-blue-600 hover:text-blue-800 cursor-pointer"
+                    href="https://www.amazon.co.uk/HowExpert-Guide-Belly-Dancing-Learn-ebook/dp/B08BJGGP45/ref=sr_1_1?dib=eyJ2IjoiMSJ9.3FcfThAJmmrI7pkTUl74Zg.dvLZv-OUxULqe61h3dHSEbW1hYf1C6Hb_TTqputaXIM&dib_tag=se&qid=1718149373&refinements=p_27%3AAneta+Dimoska&s=books&sr=1-1"
+                  >
+                    {chunks}
+                  </a>
+                ),
+                a1: (chunks) => (
+                  <a
+                    target="_blank"
+                    className="text-blue-600 hover:text-blue-800 cursor-pointer"
+                    href="https://www.youtube.com/watch?v=MR3I0pCZLcY"
+                  >
+                    {chunks}
+                  </a>
+                ),
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
           </div>
 
           {/* Profile Image */}
           <div className=" w-[12.5rem] h-[12.5rem] lg:flex mx-auto mb-6 lg:mb-0 justify-center lg:w-[18.75rem] lg:h-[18.75rem]">
             <div>
-              <Image src={profileImage} alt="Profile Image" className="w-full block  rounded-full"/>
+              <Image
+                src={profileImage}
+                alt="Profile Image"
+                className="w-full block  rounded-full"
+              />
             </div>
           </div>
         </div>

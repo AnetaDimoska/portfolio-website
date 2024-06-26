@@ -7,12 +7,13 @@ import Navbar from "@/components/navbar";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 
-export default function Home() {
+export default function Home({params}: { params: {locale: string }}) {
+
   return (
     <main className="w-full pt-28 sm:pt-24 ">
       <Navbar />
       <Hero />
-      <Projects />
+      <Projects locale={params.locale}/>
       <Experience />
       <Skills />
       <About />

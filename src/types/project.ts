@@ -1,4 +1,8 @@
 
+export type Technology = {
+    title: string;
+    bgColor: string;
+}
 
 export type ProjectCardType = {
     id: number,
@@ -7,8 +11,5 @@ export type ProjectCardType = {
     image: string,
     category: string,
     timeSpan: string,
-    technologies: {
-        title: string,
-        bgColor: string,
-    }[]
+    technologies: Technology[]
 }

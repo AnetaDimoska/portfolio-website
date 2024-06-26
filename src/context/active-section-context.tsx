@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import React, { useState, createContext, useContext } from "react";
 
 type Props = {
@@ -17,11 +18,12 @@ export const ActiveSectionContext =
   createContext<ActiveSectionContextType | null>(null);
 
 export default function ActiveSectionContextProvider({ children }: Props) {
-  const [activeSection, setActiveSection] = useState<string>("Home");
+  const t = useTranslations("hero");
+  const [activeSection, setActiveSection] = useState<string>(t('section_name'));
   const [timeOfLastClick, setTimeOfLastClick] = useState(0); // we need to keep track of this to disable the observer temporarily when user clicks on a link
 
 
-  console.log('timeOfLastClick from context', timeOfLastClick)
+
   return (
     <ActiveSectionContext.Provider
       value={{

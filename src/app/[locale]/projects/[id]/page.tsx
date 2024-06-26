@@ -1,11 +1,15 @@
 import Link from "next/link";
-import { projectsDetails } from "@/lib/data";
+import { useTranslations } from "next-intl";
 import { MdArrowBack } from "react-icons/md";
 import { FiExternalLink } from "react-icons/fi";
 import ProjectGallery from "@/components/project-gallery";
+import ProjectsDetailsData from "@/data/project-details-data";
 
-export default function ProjectDetails({ params }: { params: { id: string } }) {
-  const project = projectsDetails.find((project) => project.id === +params.id);
+
+export default function ProjectDetails({ params }: { params: { id: string, locale: string } }) {
+  const t = useTranslations("project_details_page");
+  const data = ProjectsDetailsData(+params.id)
+  const project = data.find((project) => project.id === +params.id);
 
   return (
     <section className="bg-black-100 py-20 relative">
@@ -29,14 +33,14 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
           {/* <!-- Project Description Card --> */}
           <div className="shadow-md  bg-white/35 rounded-xl p-6 dark:bg-white/15">
             <h3 className="text-2xl font-semibold text-gray-900  dark:text-white/60">
-              Project Description
+            {t('project_description')}
             </h3>
             <p className="mt-4 leading-relaxed">{project?.info}</p>
           </div>
           {/* <!-- Key Features Card --> */}
           <div className="shadow-md  bg-white/35 rounded-xl p-6 relative overflow-hidden dark:bg-white/15">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4 dark:text-white/60">
-              Key Features
+            {t('key_features')}
             </h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +75,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
             </svg>
 
             <ul className="flex flex-wrap gap-2">
-              {project?.features.map((feature) => (
+              {project?.features.flat().map((feature) => (
                 <li
                   key={feature.id}
                   className="flex items-center gap-x-1 p-2  rounded-xl border border-gray-500"
@@ -86,7 +90,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
           {/* <!-- Technologies Used Card --> */}
           <div className="shadow-md  bg-white/35 rounded-xl p-6 dark:bg-white/15">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4 dark:text-white/60">
-              Built with
+            {t('technologies')}
             </h3>
             <ul className="flex flex-wrap gap-2">
               {project?.technologies?.map((tech) => (
@@ -105,13 +109,13 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
           <div className="lg:flex  shadow-md bg-white/35 rounded-xl p-6 lg:px-6 lg:py-16 dark:bg-white/15">
             <div className="lg:w-1/2 lg:border-r border-r-gray-400 dark:border-r-gray-400/60">
               <h3 className="text-xl font-semibold text-gray-900  mb-4 dark:text-white/60">
-                My Role
+              {t('my_role')}
               </h3>
               <p className="w-[80%]">{project?.role}</p>
             </div>
             <div className="mt-10 lg:mt-0 lg:w-1/2 flex flex-col items-end">
               <h3 className="text-xl font-semibold text-gray-900  mb-4 dark:text-white/60">
-                Development Process
+              {t('dev_process')}
               </h3>
               <p className="w-[80%] text-right">
                 {project?.development_process}

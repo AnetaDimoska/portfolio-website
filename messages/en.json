@@ -1,0 +1,238 @@
+{
+  "general": {
+    "professional": "Professional",
+    "personal": "Personal"
+  },
+  "navbar": {
+    "home": {
+      "name": "Home"
+    },
+    "projects": {
+      "name": "Projects"
+    },
+    "experience": {
+      "name": "Experience"
+    },
+    "skills": {
+      "name": "Skills"
+    },
+    "about": {
+      "name": "About"
+    },
+    "contact": {
+      "name": "Contact"
+    }
+  },
+  "hero": {
+    "section_name": "Home",
+    "greeting": "Hello, I'm Aneta, <p>a passionate <strong>front-end developer</strong></p>",
+    "headline": "With <strong>over two years</strong> of experience in the tech industry, I specialize in building responsive, user-friendly <strong>web apps and sites</strong> using the latest technologies like <strong>React</strong> and <strong>Next.js</strong>.",
+    "cta_connect": "Let's Connect",
+    "cta_download": "Download CV"
+  },
+  "projects": {
+    "section_name": "Projects",
+    "heading": "My Projects"
+  },
+  "projects_data": {
+    "brainster_learn": {
+      "description": "Online learning platform with user auth, leaderboard, AI assistant, dashboard for Brainster Academies students."
+    },
+    "brainster_library": {
+      "description": "Online learning platform with user auth, leaderboard, AI assistant, dashboard for Brainster Academies students."
+    },
+    "generation_next": {
+      "description": "Redesigned landing page for entry test application on Brainster College. Also, applied new design for the closing term page."
+    },
+    "rjk_korchagin": {
+      "description": "Mentored student to create a fully responsive high school web site with filters, carousels, image gallery and navigation."
+    },
+    "portfolio": {
+      "description": "Created personal portfolio using Next.js featuring a contact form, internationalization, and dark/light theme."
+    }
+  },
+  "experience_data": {
+    "section_name": "Experience",
+    "heading": "My Experience",
+    "full_time": {
+      "description": "Developed an online learning platform for academy students, maintained and updated existing projects, enrolled as an assistant in a Front-End Academy."
+    },
+    "intern": {
+      "description": "During my internship program i have created an online library for Brainster students "
+    },
+    "academy": {
+      "description": "I successfully completed the Brainster Front-End Academy, gaining expertise in HTML, CSS, JS, and React. I also participated in live hackathons and built real-world projects"
+    },
+    "overall_experience": {
+      "description": "My previous work experiences were in the field of banking, education, customer services, and logistics. For more details please visit my"
+    }
+  },
+  "skills": {
+    "section_name": "Skills",
+    "heading": "Skills"
+  },
+  "about": {
+    "section_name": "About",
+    "heading": "About Me",
+    "content_one": "My journey began three years ago, when I transitioned from a background in Sociology to pursue a career in web development. During my work experience, I have developed an <strong>online learning platform,</strong> mentored interns, <strong>maintained and updated</strong> existing projects.",
+    "content_two": " My technical skills are complemented by strong soft skills, including effective teamwork, excellent communication, <strong>flexibility</strong>, adaptability, and a <strong>continuous learning mindset</strong>. My <strong>curiosity</strong> and <strong>problem-solving abilities</strong> enable me to tackle challenges creatively and efficiently.",
+    "content_three": "Outside of coding, I enjoy activities that fulfill me, such as <strong>dancing</strong> and <strong>writing</strong>. Combining these two passions lead me to <a0>write and publish my guide book on Amazon</a0>, which I am very proud of. Additionally, my <strong>love for teaching</strong> inspired me to hold an online webinar on topic <a1>What is the Role of a Front-End Developer in a Company</a1>"
+  },
+  "contact": {
+    "section_name": "Contact",
+    "heading": "Let's Connect",
+    "email": "Your email",
+    "message": "Your message",
+    "submit": "Submit",
+    "success": "Email sent successfully"
+  },
+  "footer": {
+    "content": "All rights reserved."
+  },
+  "project_details_page": {
+    "project_description": "Project description",
+    "key_features": "Key Features",
+    "technologies": "Build with",
+    "my_role": "My Role",
+    "dev_process": "Development Process",
+    "gallery": "Project Gallery",
+    "brainster_learn": {
+      "description": "Online learning platform centralizing course materials, progress tracking, personalized AI support for student success and many more features",
+      "role": "As a front-end developer, I implemented the user interface, created reusable components, and ensured responsive, visually appealing, and performant design using React and Styled Components.",
+      "development_process": "We followed Agile methodology with two-week sprints, daily stand-ups, and regular code reviews to ensure high-quality deliverables.",
+      "info": "Brainster Learn is an innovative online platform designed exclusively for students at Brainster Academies. Serving as the primary learning resource, it consolidates all course materials, including videos and text-based content, into one accessible location.",
+      "features": [
+        {
+          "project_id": 1,
+          "title": "User Authentication"
+        },
+        {
+          "project_id": 1,
+          "title": "Progress Tracking"
+        },
+        {
+          "project_id": 1,
+          "title": "Material Access"
+        },
+        {
+          "project_id": 1,
+          "title": "Interactive Leaderboard"
+        },
+        {
+          "project_id": 1,
+          "title": "AI Learning Assistant"
+        },
+        {
+          "project_id": 1,
+          "title": "On-boarding process"
+        },
+        {
+          "project_id": 1,
+          "title": "Certificate generation"
+        },
+        {
+          "project_id": 1,
+          "title": "Online Payment"
+        }
+      ]
+    },
+    "brainster_library": {
+      "description": "Developed an online library for Brainster students with online reading, audio books, reviews, user auth, rating, and notes.",
+      "role": "As a front-end developer, I designed and implemented the user interface, created reusable components, and ensured responsive, visually appealing, and performant design using React and Styled Components.",
+      "development_process": "We followed Agile methodology with two-week sprints, daily stand-ups, and regular code reviews to ensure high-quality deliverables.",
+      "info": "Brainster Library is a web application developed for Brainster Academy and Brainster Next College students. Users can log in, save their favorite books, make reservations, leave reviews, and store notes. This platform enhances the academic experience by providing a centralized, user-friendly resource for managing and engaging with educational content.",
+      "features": [
+        {
+          "title": "User Authentication"
+        },
+        {
+          "title": "Favorites"
+        },
+        {
+          "title": "Book Review"
+        },
+        {
+          "title": "Book Note"
+        },
+        {
+          "title": "Audio Books"
+        },
+        {
+          "title": "Suggest a Book"
+        }
+      ]
+    },
+    "generation_next": {
+      "description": "Redesigned landing page for entry test application on Brainster College. Also, applied new design for the closing term page.",
+      "role": "Since this was an existing project, I redesigned the landing page. Additionally, once the application period closes, the landing page automatically switches to display a 'pending' page until the next application term opens.",
+      "development_process": "We followed Agile methodology with two-week sprints, daily stand-ups, and regular code reviews to ensure high-quality deliverables.",
+      "info": "Generation Next is an application designed for potential students of Brainster Next College. After registering, users have 40 minutes to complete an entry test. Upon completing the test, users are directed to a score leaderboard, where they can see their performance compared to others. This app provides an engaging and competitive way for prospective students to demonstrate their knowledge and readiness for Brainster Next College.",
+      "features": [
+        {
+          "title": "User Registration"
+        },
+        {
+          "title": "Counter"
+        },
+        {
+          "title": "Engaging Design"
+        }
+      ]
+    },
+    "rjk_korchagin": {
+      "description": "Mentored student to create a fully responsive high school web site with filters, carousels, image gallery and navigation.",
+      "role": "As a mentor to a student from Brainster Next College who developed this project, I provided guidelines, assisted with the project structure, and helped implement more complex logic.",
+      "info": "RJK Korchagin is a website developed for RJK Korchagin High School in Skopje. The site features multiple pages that provide information about the school's activities, news, and staff members. It serves as a comprehensive resource for students, parents, and the community to stay updated and engaged with the school's events and announcements.",
+      "development_process": "We followed Agile methodology with two-week sprints, daily stand-ups, and regular code reviews to ensure high-quality deliverables.",
+      "features": [
+        {
+          "title": "Multi-Page Layout"
+        },
+        {
+          "title": "Activity Updates"
+        },
+        {
+          "title": "News Section"
+        },
+        {
+          "title": "Staff Directory"
+        },
+        {
+          "title": "User-Friendly Design"
+        },
+        {
+          "title": "Responsive Design"
+        }
+      ]
+    },
+    "portfolio": {
+      "description": "Created personal portfolio using Next.js featuring a contact form, internationalization, and dark/light theme.",
+      "role": "As the creator and developer of this portfolio, I was responsible for designing and implementing the entire website. This included crafting the user interface, developing reusable components, ensuring responsive design, integrating a contact form, implementing a theme switcher for light and dark modes, and enabling internationalization for multiple languages.",
+      "development_process": "I began by planning the website structure, creating wireframes, and selecting the design elements. Then, I set up the development environment with Next.js, developed reusable React components, and implemented key features such as the contact form, theme switcher, and internationalization. Finally, I ensured the site was responsive and optimized for performance.",
+      "info": "My Portfolio is a personal website I created to present myself, showcase my projects, and highlight my skills. The site features a clean and professional design, providing visitors with an engaging experience. This portfolio serves as a comprehensive digital resume, demonstrating my capabilities as a front-end developer.",
+      "features": [
+        {
+          "title": "Project Showcase"
+        },
+        {
+          "title": "Skills Highlight"
+        },
+        {
+          "title": "Contact Form"
+        },
+        {
+          "title": "Theme Switcher"
+        },
+        {
+          "title": "Internationalization"
+        },
+        {
+          "title": "Responsive Design"
+        },
+        {
+          "title": "Professional Layout"
+        }
+      ]
+    }
+  }
+}

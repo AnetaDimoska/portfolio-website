@@ -19,16 +19,13 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
-  if (!senderEmail || typeof senderEmail !== "string") {
-    console.log("vo prv uslov");
+  if (!senderEmail || typeof senderEmail !== "string") {;
     return {
       error: "Invalid email ",
     };
   }
 
   if (!senderMessage || typeof senderMessage !== "string") {
-    console.log("vo vtor uslov");
-
     return {
       error: "Invalid message ",
     };
@@ -47,10 +44,8 @@ export const sendEmail = async (formData: FormData) => {
         senderEmail,
       }),
     });
-    console.log("vo try");
 
   } catch (error: unknown) {
-    console.log("vo error");
     return {
       error: error
     };

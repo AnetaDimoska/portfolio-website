@@ -1,14 +1,18 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { experiencesData } from "@/lib/data";
+// import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/useSectionInView";
 import SectionHeading from "./section-heading";
+import ExperienceData from "@/data/experience-data";
+import { useTranslations } from "next-intl";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const t = useTranslations("experience_data");
+  const { ref } = useSectionInView(t("section_name"));
   const refDiv = useRef<HTMLDivElement | null>(null);
   const [isSectionVisible, setIsSectionVisible] = useState<boolean>(false);
+  const experiencesData = ExperienceData()
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -33,7 +37,7 @@ export default function Experience() {
       id="experience"
       className="mt-24 md:mt-32  scroll-mt-32 relative "
     >
-      <SectionHeading>My Experience</SectionHeading>
+      <SectionHeading>{t('heading')}</SectionHeading>
       <div className="bg-[#e5e2f8] blur-[14rem] absolute top-0 left-0 -z-10 w-full h-full dark:bg-[#38345f]"></div>
       <div
         ref={refDiv}

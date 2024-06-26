@@ -1,12 +1,15 @@
 "use client";
 
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { links } from "@/lib/data";
+import NavbarLinks from "@/data/navbar-link";
+import { useTranslations } from "next-intl";
 
 
 export default function Navbar() {
 
   const { activeSection, setActiveSection } = useActiveSectionContext()
+  const t = useTranslations("navbar");
+  const links = NavbarLinks()
 
 
   return (

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { BiSolidUser } from "react-icons/bi";
 import { IoBriefcase } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
+import { useTranslations } from "next-intl";
 
 interface ProjectCardProps {
   image: string;
@@ -25,6 +26,7 @@ export default function ProjectCard({
   timeSpan,
   technologies,
 }: ProjectCardProps) {
+  const t = useTranslations("general");
   return (
     <article className="relative parent cursor-pointer rounded-xl ">
       <div className="perspective-1000 card-container w-full h-[560px] relative">
@@ -44,11 +46,11 @@ export default function ProjectCard({
                   {category === "work" ? (
                     <>
                       <IoBriefcase />{" "}
-                      <span className="ml-1"> Professional</span>
+                      <span className="ml-1"> {t('professional')}</span>
                     </>
                   ) : (
                     <>
-                      <BiSolidUser /> <span className="ml-2"> Personal</span>
+                      <BiSolidUser /> <span className="ml-2"> {t('personal')}</span>
                     </>
                   )}
                 </p>

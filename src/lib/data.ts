@@ -41,40 +41,31 @@ import { CiSettings } from "react-icons/ci";
 import { MdLanguage } from "react-icons/md";
 import { LuLayoutDashboard } from "react-icons/lu";
 
-export const links = [
-  {
-    name: "Home",
+export const links = {
+  home: {
     hash: "#home",
   },
-  {
-    name: "Projects",
+  projects: {
     hash: "#projects",
   },
-
-  {
-    name: "Experience",
+  experience: {
     hash: "#experience",
   },
-  {
-    name: "Skills",
+  skills: {
     hash: "#skills",
   },
-  {
-    name: "About",
+  about: {
     hash: "#about",
   },
-  {
-    name: "Contact",
+  contact: {
     hash: "#contact",
   },
-];
+};
 
-export const projects = [
-  {
+export const projects = {
+  brainster_learn: {
     id: 1,
     title: "Brainster Learn",
-    description:
-      "Online learning platform with user auth, leaderboard, AI assistant, dashboard for Brainster Academies students.",
     image: "/cover/learn-cover.png",
     category: "work",
     timeSpan: "2022 - present",
@@ -93,11 +84,9 @@ export const projects = [
       },
     ],
   },
-  {
+  brainster_library: {
     id: 2,
     title: "Brainster Library",
-    description:
-      "Developed an online library for Brainster students with online reading, audiobooks, reviews, user auth, rating, and notes.",
     image: "/cover/library2-cover.png",
     category: "work",
     timeSpan: "Feb - May, 2022",
@@ -112,11 +101,9 @@ export const projects = [
       },
     ],
   },
-  {
+  generation_next: {
     id: 3,
     title: "Generation Next",
-    description:
-      "Redesigned landing page for entry test application on Brainster College. Also, applied new design for the closing term page.",
     image: "/cover/generation-cover.png",
     category: "work",
     timeSpan: "Feb - March, 2024",
@@ -131,11 +118,9 @@ export const projects = [
       },
     ],
   },
-  {
+  rjk_korchagin: {
     id: 4,
     title: "RJK Korchagin",
-    description:
-      "Mentored student to create a fully responsive high school web site with filters, carousels, image gallery and navigation.",
     image: "/cover/rjk-cover.png",
     category: "work",
     timeSpan: "Sept - Oct, 2023",
@@ -150,11 +135,9 @@ export const projects = [
       },
     ],
   },
-  {
+  portfolio: {
     id: 5,
     title: "Aneta's portfolio",
-    description:
-      "Created personal portfolio using Next.js featuring a contact form, internationalization, and dark/light theme.",
     image: "/cover/portfolio-cover.png",
     category: "personal",
     timeSpan: "June, 2024",
@@ -168,60 +151,52 @@ export const projects = [
         bgColor: "#3178C6",
       },
       {
-        title: "Tailwind",
+        title: "Tailwind CSS",
         bgColor: "#06B6D4",
+      },
+      {
+        title: "next-intl",
+        bgColor: "#3178C6",
       },
     ],
   },
-];
+};
 
-export const experiencesData = [
-  {
+export const experience = {
+  full_time: {
     title: "Front-End Developer",
     location: "Brainster · Full-time",
     link: "",
-    description:
-      "Developed an online learning platform for academy students, maintained and updated existing projects, enrolled as an assistant in a Front-End Academy.",
     icon: React.createElement(CgWorkAlt),
     date: "May 2022 - Present",
   },
-  {
+  intern: {
     title: "Front-End Developer Intern",
     location: "Brainster",
     link: "",
-    description:
-      "During my internship program i have created an online library for Brainster students ",
     icon: React.createElement(FaReact),
     date: "Feb - May, 2022",
   },
-  {
+  academy: {
     title: "Front-End Academy",
     location: "Brainster",
     link: "",
-    description:
-      "I successfully completed the Brainster Front-End Academy, gaining expertise in HTML, CSS, JS, and React. I also participated in live hackathons and built real-world projects",
-
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2022",
   },
-  {
+  overall_experience: {
     title: "Overall Experience",
     location: "",
     link: "https://www.linkedin.com/in/aneta-dimoska/",
-    description:
-      "My previous work experiences were in the field of banking, education, customer services, and logistics. For more details please visit my",
-
     icon: React.createElement(CgWorkAlt),
     date: "2014 - 2021",
   },
-] as const;
+};
 
-export const projectsDetails = [
-  {
+export const projectsDetails = {
+  brainster_learn: {
     id: 1,
     title: "Brainster Learn",
-    description:
-      "Online learning platform centralizing course materials, progress tracking, personalized AI support for student success and many more features",
     link: "https://learn.brainster.co/",
     technologies: [
       "ReactJs",
@@ -230,10 +205,6 @@ export const projectsDetails = [
       "Apollo Client",
       "Axios",
     ],
-    role: "As a front-end developer, I implemented the user interface, created reusable components, and ensured responsive, visually appealing, and performant design using React and Styled Components.",
-    development_process:
-      "We followed Agile methodology with two-week sprints, daily stand-ups, and regular code reviews to ensure high-quality deliverables.",
-    info: "Brainster Learn is an innovative online platform designed exclusively for students at Brainster Academies. Serving as the primary learning resource, it consolidates all course materials, including videos and text-based content, into one accessible location.",
     media: {
       images: [
         "/learn/01.png",
@@ -249,56 +220,50 @@ export const projectsDetails = [
       {
         id: 1,
         icon: React.createElement(GrSecure),
-        title: "User Authentication",
+        project_id: 1,
       },
       {
         id: 2,
         icon: React.createElement(GiProgression),
-        title: "Progress Tracking",
+        project_id: 1,
       },
       {
         id: 3,
         icon: React.createElement(ImBooks),
-        title: "Material Access",
+        project_id: 1,
       },
       {
         id: 4,
         icon: React.createElement(MdLeaderboard),
-        title: "Interactive Leaderboard",
+        project_id: 1,
       },
       {
         id: 5,
         icon: React.createElement(BsStars),
-        title: "AI Learning Assistant",
+        project_id: 1,
       },
       {
         id: 6,
         icon: React.createElement(PiSteps),
-        title: "On-boarding process",
+        project_id: 1,
       },
       {
         id: 7,
         icon: React.createElement(LiaCertificateSolid),
-        title: "Certificate generation",
+        project_id: 1,
       },
       {
         id: 8,
         icon: React.createElement(MdOutlinePayment),
-        title: "Online Payment",
+        project_id: 1,
       },
     ],
   },
-  {
+  brainster_library: {
     id: 2,
     title: "Brainster Library",
-    description:
-      "Developed an online library for Brainster students with online reading, audio books, reviews, user auth, rating, and notes.",
     link: "https://library.next.edu.mk/",
     technologies: ["ReactJs", "Styled Components", "Axios"],
-    role: "As a front-end developer, I designed and implemented the user interface, created reusable components, and ensured responsive, visually appealing, and performant design using React and Styled Components.",
-    development_process:
-      "We followed Agile methodology with two-week sprints, daily stand-ups, and regular code reviews to ensure high-quality deliverables.",
-    info: "Brainster Library is a web application developed for Brainster Academy and Brainster Next College students. Users can log in, save their favorite books, make reservations, leave reviews, and store notes. This platform enhances the academic experience by providing a centralized, user-friendly resource for managing and engaging with educational content.",
     media: {
       images: [
         "/library/01.png",
@@ -314,46 +279,40 @@ export const projectsDetails = [
       {
         id: 1,
         icon: React.createElement(GrSecure),
-        title: "User Authentication",
+        project_id: 2,
       },
       {
         id: 2,
         icon: React.createElement(FaHeart),
-        title: "Favorites",
+        project_id: 2,
       },
       {
         id: 3,
         icon: React.createElement(MdOutlineStarRate),
-        title: "Book Review",
+        project_id: 2,
       },
       {
         id: 4,
         icon: React.createElement(PiNotepadFill),
-        title: "Book Note",
+        project_id: 2,
       },
       {
         id: 5,
         icon: React.createElement(FaHeadphonesAlt),
-        title: "Audio Books",
+        project_id: 2,
       },
       {
         id: 6,
         icon: React.createElement(FaRegLightbulb),
-        title: "Suggest a Book",
+        project_id: 2,
       },
     ],
   },
-  {
+  generation_next: {
     id: 3,
     title: "Generation Next",
-    description:
-      "Redesigned landing page for entry test application on Brainster College. Also, applied new design for the closing term page.",
     link: "https://generation.next.edu.mk/",
     technologies: ["ReactJs", "Styled Components", "Axios"],
-    role: "Since this was an existing project, I redesigned the landing page. Additionally, once the application period closes, the landing page automatically switches to display a 'pending' page until the next application term opens.",
-    development_process:
-      "We followed Agile methodology with two-week sprints, daily stand-ups, and regular code reviews to ensure high-quality deliverables.",
-    info: "Generation Next is an application designed for potential students of Brainster Next College. After registering, users have 40 minutes to complete an entry test. Upon completing the test, users are directed to a score leaderboard, where they can see their performance compared to others. This app provides an engaging and competitive way for prospective students to demonstrate their knowledge and readiness for Brainster Next College.",
     media: {
       images: [
         "/generation/01.png",
@@ -369,31 +328,25 @@ export const projectsDetails = [
       {
         id: 1,
         icon: React.createElement(GrSecure),
-        title: "User Registration",
+        project_id: 3,
       },
       {
         id: 2,
         icon: React.createElement(CgSandClock),
-        title: "Counter",
+        project_id: 3,
       },
       {
         id: 3,
         icon: React.createElement(FaRegCircleCheck),
-        title: "Engaging Design",
+        project_id: 3,
       },
     ],
   },
-  {
+  rjk_korchagin: {
     id: 4,
     title: "RJK Korchagin",
-    description:
-      "Mentored student to create a fully responsive high school web site with filters, carousels, image gallery and navigation.",
     link: "https://rjk.edu.mk/",
     technologies: ["ReactJs", "Styled Components", "Axios"],
-    role: "As a mentor to a student from Brainster Next College who developed this project, I provided guidelines, assisted with the project structure, and helped implement more complex logic.",
-    info: "RJK Korchagin is a website developed for RJK Korchagin High School in Skopje. The site features multiple pages that provide information about the school's activities, news, and staff members. It serves as a comprehensive resource for students, parents, and the community to stay updated and engaged with the school's events and announcements.",
-    development_process:
-      "We followed Agile methodology with two-week sprints, daily stand-ups, and regular code reviews to ensure high-quality deliverables.",
     media: {
       images: [
         "/korchagin/01.png",
@@ -408,45 +361,45 @@ export const projectsDetails = [
         id: 1,
         icon: React.createElement(GrMultiple),
         title: "Multi-Page Layout",
+        project_id: 4,
       },
       {
         id: 2,
         icon: React.createElement(MdUpdate),
         title: "Activity Updates",
+        project_id: 4,
       },
       {
         id: 3,
         icon: React.createElement(FaRegNewspaper),
         title: "News Section",
+        project_id: 4,
       },
       {
         id: 4,
         icon: React.createElement(MdPeopleOutline),
+        project_id: 4,
         title: "Staff Directory",
       },
       {
         id: 5,
         icon: React.createElement(FaRegCircleCheck),
+        project_id: 4,
         title: "User-Friendly Design",
       },
       {
-        id: 5,
+        id: 6,
         icon: React.createElement(DiResponsive),
+        project_id: 4,
         title: "Responsive Design",
       },
     ],
   },
-  {
+  portfolio: {
     id: 5,
     title: "Aneta's Portfolio",
     link: "https://rjk.edu.mk/",
-    description:
-      "Created personal portfolio using Next.js featuring a contact form, internationalization, and dark/light theme.",
     technologies: ["Next JS", "TypeScript", "Tailwind", "Resend"],
-    role: "As the creator and developer of this portfolio, I was responsible for designing and implementing the entire website. This included crafting the user interface, developing reusable components, ensuring responsive design, integrating a contact form, implementing a theme switcher for light and dark modes, and enabling internationalization for multiple languages.",
-    development_process:
-      "I began by planning the website structure, creating wireframes, and selecting the design elements. Then, I set up the development environment with Next.js, developed reusable React components, and implemented key features such as the contact form, theme switcher, and internationalization. Finally, I ensured the site was responsive and optimized for performance.",
-    info: "My Portfolio is a personal website I created to present myself, showcase my projects, and highlight my skills. The site features a clean and professional design, providing visitors with an engaging experience. This portfolio serves as a comprehensive digital resume, demonstrating my capabilities as a front-end developer.",
     media: {
       images: [
         "/learn/01.png",
@@ -462,41 +415,48 @@ export const projectsDetails = [
       {
         id: 1,
         icon: React.createElement(GoProjectRoadmap),
+        project_id: 5,
         title: "Project Showcase",
       },
       {
         id: 2,
         icon: React.createElement(CiSettings),
+        project_id: 5,
         title: "Skills Highlight",
       },
       {
         id: 3,
         icon: React.createElement(IoMailUnreadOutline),
+        project_id: 5,
         title: "Contact Form",
       },
       {
         id: 4,
         icon: React.createElement(IoMdSwitch),
+        project_id: 5,
         title: "Theme Switcher",
       },
       {
         id: 5,
         icon: React.createElement(MdLanguage),
-        title: "Internationalization"
+        project_id: 5,
+        title: "Internationalization",
       },
       {
         id: 6,
         icon: React.createElement(DiResponsive),
-        title: "Responsive Design"
+        project_id: 5,
+        title: "Responsive Design",
       },
       {
         id: 7,
         icon: React.createElement(LuLayoutDashboard),
-        title: "Professional Layout"
+        project_id: 5,
+        title: "Professional Layout",
       },
     ],
   },
-];
+};
 
 export const skillsData = [
   {

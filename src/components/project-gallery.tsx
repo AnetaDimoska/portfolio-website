@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -8,11 +9,12 @@ type Props = {
 };
 
 export default function ProjectGallery({ images }: Props) {
+  const t = useTranslations("project_details_page");
   const [activeImage, setActiveImage] = useState<string>(images[0]);
   return (
     <div className=" mt-6 shadow-md bg-white/25 dark:bg-white/15 rounded-xl">
         <h3 className="text-xl font-semibold text-gray-900 text-center m-4 pt-4 dark:text-white/60">
-          Project Gallery
+        {t('gallery')}
         </h3>
       <div className="xxl:flex gap-8  justify-between  px-6 py-6 ">
         <div className="hidden w-2/3 rounded-xl  xxl:block">

@@ -6,14 +6,21 @@ import { useSectionInView } from "@/hooks/useSectionInView";
 import toast from "react-hot-toast";
 import SectionHeading from "./section-heading";
 import SubmitButton from "./submit-button";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
-  const {ref} = useSectionInView("Contact")
+  const t = useTranslations("contact");
+  const { ref } = useSectionInView(t("section_name"));
+
   const refForm = useRef<HTMLFormElement>(null);
-  
+
   return (
-    <section ref={ref} id="contact" className=" mt-24 md:mt-32 w-[min(90%,38rem)] mx-auto scroll-mt-32">
-      <SectionHeading>Let&apos;s Connect</SectionHeading>
+    <section
+      ref={ref}
+      id="contact"
+      className=" mt-24 md:mt-32 w-[min(90%,38rem)] mx-auto scroll-mt-32"
+    >
+      <SectionHeading>{t("heading")}</SectionHeading>
 
       <form
         ref={refForm}
@@ -32,7 +39,7 @@ export default function Contact() {
             return toast.error(res?.error.message as string);
           }
 
-          toast.success("Email sent successfully");
+          toast.success(t("success"));
           refForm.current?.reset();
         }}
         className="mt-10 flex flex-col dark:text-black "
@@ -43,12 +50,12 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder={t("email")}
         />
         <textarea
           className="h-52 my-3 rounded-lg border border-gray-300 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder={t("message")}
           required
           maxLength={5000}
         />

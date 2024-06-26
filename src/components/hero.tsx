@@ -1,6 +1,7 @@
 "use client";
 import IntroIllustration from "./intro-illustration";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { useSectionInView } from "@/hooks/useSectionInView";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -10,7 +11,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import FlowerIllustration from "./flower-illustration";
 
 export default function Hero() {
-  const { ref } = useSectionInView("Home");
+  const t = useTranslations("hero");
+  const { ref } = useSectionInView(t("section_name"));
   const { setActiveSection } = useActiveSectionContext();
   return (
     <section
@@ -21,16 +23,19 @@ export default function Hero() {
       <div className="block mt-14 md:mt-28 xxxl:mt-40  xxl:w-11/12 xxl:ml-auto xxxl:w-10/12">
         <div className="relative sm:block w-full xxl:flex xxl:justify-between">
           <div className="relative sm:static w-full  md:h-[65vh] xxl:h-auto">
-          <FlowerIllustration />
+            <FlowerIllustration />
+
             <h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl hidden-before-animation animate-slideDeskFromTop">
-              Hello, I&apos;m Aneta, <br /> a passionate{" "}
-              <strong>front-end developer</strong>.
+              {t.rich("greeting", {
+                p: (chunks) => <p>{chunks}</p>,
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
             </h1>
             <p className=" w-full lg:w-4/5 xxxl:w-2/3 mb-10 mt-2  px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl hidden-before-animation animate-slideFromBottom">
-              With <strong>over two years</strong> of experience in the tech
-              industry, I specialize in building responsive, user-friendly{" "}
-              <strong>web apps and sites</strong> using the latest technologies
-              like <strong>React</strong> and <strong>Next.js</strong>.
+              {t.rich("headline", {
+                p: (chunks) => <p>{chunks}</p>,
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
 
             <div className="flex items-center gap-3 mt-[250px] pl-[1rem] hidden-before-animation animate-slideHeroButtons z-20 relative sm:mt-0  ">
@@ -41,7 +46,7 @@ export default function Hero() {
                   setActiveSection("Contact");
                 }}
               >
-                Let&apos;s Connect{" "}
+               {t('cta_connect')}
                 <FaArrowRightLong className="opacity-70 group-hover:translate-x-1/2 transition" />
               </Link>
               <a
@@ -49,7 +54,7 @@ export default function Hero() {
                 href="/cv.pdf"
                 download
               >
-                Download CV <FiDownload />
+                   {t('cta_download')} <FiDownload />
               </a>
               <a href="https://github.com/AnetaDimoska" target="_blank">
                 <FaGithub className="text-xl cursor-pointer opacity-70 hover:scale-110  active:scale-105  transition" />

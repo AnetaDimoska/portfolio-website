@@ -1,0 +1,230 @@
+{
+  "general": {
+    "professional": "Professionell",
+    "personal": "Persönlich"
+  },
+  "navbar": {
+    "home": {
+      "name": "Startseite"
+    },
+    "projects": {
+      "name": "Projekte"
+    },
+    "experience": {
+      "name": "Erfahrung"
+    },
+    "skills": {
+      "name": "Fähigkeiten"
+    },
+    "about": {
+      "name": "Über"
+    },
+    "contact": {
+      "name": "Kontakt"
+    }
+  },
+  "hero": {
+    "section_name": "Startseite",
+    "greeting": "Hallo, ich bin Aneta, <p>eine leidenschaftliche <strong>Front-End-Entwicklerin</strong></p>",
+    "headline": "Mit <strong>über zwei Jahren</strong> Erfahrung in der Tech-Branche spezialisiere ich mich auf den Bau von responsiven, benutzerfreundlichen <strong>Web-Apps und Websites</strong> unter Verwendung der neuesten Technologien wie <strong>React</strong> und <strong>Next.js</strong>.",
+    "cta_connect": "Lass uns verbinden",
+    "cta_download": "Herunterladen CV"
+  },
+  "projects": {
+    "section_name": "Projekte",
+    "heading": "Meine Projekte"
+  },
+  "projects_data": {
+    "brainster_learn": {
+      "description": "Online-Lernplattform mit Benutzer-Authentifizierung, Bestenliste, KI-Assistent, Dashboard für Studenten der Brainster Academies."
+    },
+    "brainster_library": {
+      "description": "Online-Lernplattform mit Benutzer-Authentifizierung, Bestenliste, KI-Assistent, Dashboard für Studenten der Brainster Academies."
+    },
+    "generation_next": {
+      "description": "Neu gestaltete Landing Page für die Bewerbung von Eintrittstests an der Brainster College. Auch neues Design für die Abschlussseite angewendet."
+    },
+    "rjk_korchagin": {
+      "description": "Mentorierte einen Studenten bei der Erstellung einer voll responsiven Webseite für eine High School mit Filtern, Karussells, Bildergalerie und Navigation."
+    },
+    "portfolio": {
+      "description": "Erstellte ein persönliches Portfolio mit Next.js, einschließlich Kontaktformular, Internationalisierung und Dunkel-/Hellthema."
+    }
+  },
+  "experience_data": {
+    "section_name": "Erfahrung",
+    "heading": "Meine Erfahrung",
+    "full_time": {
+      "description": "Entwickelte eine Online-Lernplattform für Akademiestudenten, pflegte und aktualisierte bestehende Projekte, und war als Assistent in einer Front-End-Akademie eingeschrieben."
+    },
+    "intern": {
+      "description": "Während meines Praktikumsprogramms habe ich eine Online-Bibliothek für Brainster-Studenten erstellt."
+    },
+    "academy": {
+      "description": "Ich habe die Brainster Front-End Academy erfolgreich abgeschlossen und Expertise in HTML, CSS, JS und React erworben. Ich habe auch an Live-Hackathons teilgenommen und praxisnahe Projekte gebaut."
+    },
+    "overall_experience": {
+      "description": "Meine bisherigen Berufserfahrungen lagen in den Bereichen Bankwesen, Bildung, Kundenservice und Logistik. Für weitere Details besuchen Sie bitte mein"
+    }
+  },
+  "skills": {
+    "section_name": "Fähigkeiten",
+    "heading": "Fähigkeiten"
+  },
+  "about": {
+    "section_name": "Über",
+    "heading": "Über Mich",
+    "content_one": "Meine Reise begann vor drei Jahren, als ich von einem Hintergrund in Soziologie zu einer Karriere in der Webentwicklung wechselte. Während meiner Berufserfahrung habe ich eine <strong>Online-Lernplattform entwickelt,</strong> Praktikanten betreut und <strong>bestehende Projekte gepflegt und aktualisiert.</strong>",
+    "content_two": "Meine technischen Fähigkeiten werden durch starke Soft Skills ergänzt, darunter effektive Teamarbeit, exzellente Kommunikation, <strong>Flexibilität</strong>, Anpassungsfähigkeit und eine <strong>kontinuierliche Lernbereitschaft</strong>. Meine <strong>Neugier</strong> und <strong>Problemlösungsfähigkeiten</strong> ermöglichen es mir, Herausforderungen kreativ und effizient zu meistern.",
+    "content_three": "Abseits des Programmierens genieße ich Aktivitäten, die mich erfüllen, wie <strong>tanzen</strong> und <strong>schreiben</strong>. Die Kombination dieser beiden Leidenschaften führte dazu, dass ich <a0>mein Handbuch auf Amazon geschrieben und veröffentlicht</a0> habe, worauf ich sehr stolz bin. Darüber hinaus hat meine <strong>Liebe zum Lehren</strong> mich inspiriert, ein Online-Webinar zum Thema <a1>Was ist die Rolle eines Front-End-Entwicklers in einem Unternehmen</a1> abzuhalten."
+  },
+  "contact": {
+    "section_name": "Kontakt",
+    "heading": "Lass uns verbinden",
+    "email": "Ihre E-Mail",
+    "message": "Ihre Nachricht",
+    "submit": "Senden",
+    "success": "E-Mail erfolgreich gesendet"
+  },
+  "footer": {
+    "content": "Alle Rechte vorbehalten."
+  },
+  "project_details_page": {
+    "project_description": "Projektbeschreibung",
+    "key_features": "Hauptmerkmale",
+    "technologies": "Gebaut mit",
+    "my_role": "Meine Rolle",
+    "dev_process": "Entwicklungsprozess",
+    "gallery": "Projektgalerie",
+    "brainster_learn": {
+      "description": "Online-Lernplattform, die Kursmaterialien zentralisiert, Fortschrittsverfolgung, personalisierte KI-Unterstützung für den Erfolg der Studenten und viele weitere Funktionen bietet.",
+      "role": "Als Front-End-Entwickler habe ich die Benutzeroberfläche implementiert, wiederverwendbare Komponenten erstellt und ein reaktionsschnelles, optisch ansprechendes und leistungsstarkes Design mit React und Styled Components sichergestellt.",
+      "development_process": "Wir folgten der Agile-Methodik mit zweiwöchigen Sprints, täglichen Stand-ups und regelmäßigen Code-Reviews, um qualitativ hochwertige Ergebnisse sicherzustellen.",
+      "info": "Brainster Learn ist eine innovative Online-Plattform, die exklusiv für Studenten der Brainster Academies entwickelt wurde. Sie dient als primäre Lernressource und konsolidiert alle Kursmaterialien, einschließlich Videos und textbasierter Inhalte, an einem zugänglichen Ort.",
+      "features": [
+        {
+          "title": "Benutzerauthentifizierung"
+        },
+        {
+          "title": "Fortschrittsverfolgung"
+        },
+        {
+          "title": "Materialzugriff"
+        },
+        {
+          "title": "Interaktive Bestenliste"
+        },
+        {
+          "title": "KI-Lernassistent"
+        },
+        {
+          "title": "Onboarding-Prozess"
+        },
+        {
+          "title": "Zertifikatsgenerierung"
+        },
+        {
+          "title": "Online-Zahlung"
+        }
+      ]
+    },
+    "brainster_library": {
+      "description": "Entwickelte eine Online-Bibliothek für Brainster-Studenten mit Online-Lesen, Hörbüchern, Bewertungen, Benutzerauthentifizierung, Bewertung und Notizen.",
+      "role": "Als Front-End-Entwickler habe ich die Benutzeroberfläche entworfen und implementiert, wiederverwendbare Komponenten erstellt und ein reaktionsschnelles, optisch ansprechendes und leistungsstarkes Design mit React und Styled Components sichergestellt.",
+      "development_process": "Wir folgten der Agile-Methodik mit zweiwöchigen Sprints, täglichen Stand-ups und regelmäßigen Code-Reviews, um qualitativ hochwertige Ergebnisse sicherzustellen.",
+      "info": "Die Brainster Library ist eine Webanwendung, die für Studenten der Brainster Academy und des Brainster Next College entwickelt wurde. Benutzer können sich einloggen, ihre Lieblingsbücher speichern, Reservierungen vornehmen, Bewertungen hinterlassen und Notizen speichern. Diese Plattform verbessert das akademische Erlebnis, indem sie eine zentrale, benutzerfreundliche Ressource zum Verwalten und Interagieren mit Lerninhalten bietet.",
+      "features": [
+        {
+          "title": "Benutzerauthentifizierung"
+        },
+        {
+          "title": "Favoriten"
+        },
+        {
+          "title": "Buchbewertung"
+        },
+        {
+          "title": "Buchnotiz"
+        },
+        {
+          "title": "Hörbücher"
+        },
+        {
+          "title": "Buch vorschlagen"
+        }
+      ]
+    },
+    "generation_next": {
+      "description": "Neugestaltete Landing Page für die Bewerbung von Eintrittstests am Brainster College. Außerdem wurde ein neues Design für die Abschlussseite angewendet.",
+      "role": "Da dies ein bestehendes Projekt war, habe ich die Landing Page neu gestaltet. Darüber hinaus wechselt die Landing Page nach dem Ende der Bewerbungsfrist automatisch, um eine 'ausstehende' Seite anzuzeigen, bis der nächste Bewerbungszeitraum beginnt.",
+      "development_process": "Wir folgten der Agile-Methodik mit zweiwöchigen Sprints, täglichen Stand-ups und regelmäßigen Code-Reviews, um qualitativ hochwertige Ergebnisse sicherzustellen.",
+      "info": "Generation Next ist eine Anwendung, die für potenzielle Studenten des Brainster Next College entwickelt wurde. Nach der Registrierung haben Benutzer 40 Minuten Zeit, um einen Eintrittstest abzulegen. Nach Abschluss des Tests werden die Benutzer zu einer Bestenliste weitergeleitet, auf der sie ihre Leistung im Vergleich zu anderen sehen können. Diese App bietet eine ansprechende und wettbewerbsfähige Möglichkeit für zukünftige Studenten, ihr Wissen und ihre Bereitschaft für das Brainster Next College zu demonstrieren.",
+      "features": [
+        {
+          "title": "Benutzerregistrierung"
+        },
+        {
+          "title": "Zähler"
+        },
+        {
+          "title": "Ansprechendes Design"
+        }
+      ]
+    },
+    "rjk_korchagin": {
+      "description": "Mentorierte einen Studenten bei der Erstellung einer voll responsiven Webseite für eine High School mit Filtern, Karussells, Bildergalerie und Navigation.",
+      "role": "Als Mentor für einen Studenten des Brainster Next College, der dieses Projekt entwickelt hat, gab ich Richtlinien vor, half bei der Projektstruktur und unterstützte die Implementierung komplexerer Logik.",
+      "info": "RJK Korchagin ist eine Webseite, die für die RJK Korchagin High School in Skopje entwickelt wurde. Die Seite verfügt über mehrere Seiten, die Informationen über die Aktivitäten, Nachrichten und Mitarbeiter der Schule bieten. Sie dient als umfassende Ressource für Schüler, Eltern und die Gemeinschaft, um über die Veranstaltungen und Ankündigungen der Schule auf dem Laufenden zu bleiben.",
+      "development_process": "Wir folgten der Agile-Methodik mit zweiwöchigen Sprints, täglichen Stand-ups und regelmäßigen Code-Reviews, um qualitativ hochwertige Ergebnisse sicherzustellen.",
+      "features": [
+        {
+          "title": "Mehrseitiges Layout"
+        },
+        {
+          "title": "Aktualisierungen der Aktivitäten"
+        },
+        {
+          "title": "Nachrichtenbereich"
+        },
+        {
+          "title": "Mitarbeiterverzeichnis"
+        },
+        {
+          "title": "Benutzerfreundliches Design"
+        },
+        {
+          "title": "Responsives Design"
+        }
+      ]
+    },
+    "portfolio": {
+      "description": "Erstellte ein persönliches Portfolio mit Next.js, das ein Kontaktformular, Internationalisierung und ein Dunkel-/Hell-Thema bietet.",
+      "role": "Als Ersteller und Entwickler dieses Portfolios war ich verantwortlich für die Gestaltung und Implementierung der gesamten Website. Dies umfasste die Erstellung der Benutzeroberfläche, die Entwicklung wiederverwendbarer Komponenten, die Sicherstellung eines responsiven Designs, die Integration eines Kontaktformulars, die Implementierung eines Theme-Switchers für helle und dunkle Modi sowie die Ermöglichung der Internationalisierung für mehrere Sprachen.",
+      "development_process": "Ich begann mit der Planung der Website-Struktur, der Erstellung von Wireframes und der Auswahl der Designelemente. Anschließend richtete ich die Entwicklungsumgebung mit Next.js ein, entwickelte wiederverwendbare React-Komponenten und implementierte wichtige Funktionen wie das Kontaktformular, den Theme-Switcher und die Internationalisierung. Schließlich stellte ich sicher, dass die Seite responsiv und leistungsoptimiert war.",
+      "info": "Mein Portfolio ist eine persönliche Website, die ich erstellt habe, um mich selbst vorzustellen, meine Projekte zu präsentieren und meine Fähigkeiten hervorzuheben. Die Seite zeichnet sich durch ein sauberes und professionelles Design aus und bietet den Besuchern ein ansprechendes Erlebnis. Dieses Portfolio dient als umfassender digitaler Lebenslauf und demonstriert meine Fähigkeiten als Front-End-Entwickler.",
+      "features": [
+        {
+          "title": "Projektpräsentation"
+        },
+        {
+          "title": "Fähigkeitshervorhebung"
+        },
+        {
+          "title": "Kontaktformular"
+        },
+        {
+          "title": "Theme-Switcher"
+        },
+        {
+          "title": "Internationalisierung"
+        },
+        {
+          "title": "Responsives Design"
+        },
+        {
+          "title": "Professionelles Layout"
+        }
+      ]
+    }
+  }
+}
