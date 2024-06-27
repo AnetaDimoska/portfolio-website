@@ -41,7 +41,7 @@ export default function ProjectCard({
             />
 
             <div className="mt-4">
-              <div className="md:flex justify-between items-center">
+              <div className="flex justify-between items-center text-sm">
                 <p className="flex items-center ">
                   {category === "work" ? (
                     <>
@@ -58,7 +58,7 @@ export default function ProjectCard({
                   <BsCalendar3 /> <span>{timeSpan}</span>
                 </div>
               </div>
-              <p className="mt-7 text-lg">{description}</p>
+              <p className="mt-7 text-base md:text-lg">{description}</p>
               <div className="mt-6 flex gap-2 flex-wrap">
                 {technologies?.map((tech) => (
                   <span key={tech.title} className="rounded-3xl px-[0.8rem] py-[0.5rem] text-white opacity-75" style={{ backgroundColor: tech.bgColor }}>

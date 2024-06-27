@@ -3,6 +3,10 @@
     "professional": "Professionell",
     "personal": "Persönlich"
   },
+  "locale_switcher": {
+    "locale": "{locale, select, de {🇩🇪 De} en {🇺🇸 EN} other {🇲🇰 Mk}}",
+    "locale_flags": "{locale, select, de {🇩🇪} en {🇺🇸} other {🇲🇰}}"
+  },
   "navbar": {
     "home": {
       "name": "Startseite"
@@ -39,7 +43,7 @@
       "description": "Online-Lernplattform mit Benutzer-Authentifizierung, Bestenliste, KI-Assistent, Dashboard für Studenten der Brainster Academies."
     },
     "brainster_library": {
-      "description": "Online-Lernplattform mit Benutzer-Authentifizierung, Bestenliste, KI-Assistent, Dashboard für Studenten der Brainster Academies."
+      "description": "Entwickelte eine Online-Bibliothek für Brainster-Studenten mit Online-Lesen, Hörbüchern, Bewertungen, Benutzerauthentifizierung, Bewertung und Notizen."
     },
     "generation_next": {
       "description": "Neu gestaltete Landing Page für die Bewerbung von Eintrittstests an der Brainster College. Auch neues Design für die Abschlussseite angewendet."

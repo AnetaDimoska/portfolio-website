@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-// import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/useSectionInView";
 import SectionHeading from "./section-heading";
 import ExperienceData from "@/data/experience-data";
@@ -43,12 +42,12 @@ export default function Experience() {
         ref={refDiv}
         className={`timeline ${
           isSectionVisible && "after:animate-moveLine"
-        } relative max-w-[1200px] mt-6 md:mt-20 mx-auto`}
+        } relative max-w-[1200px]  md:mt-14 mx-auto`}
       >
 
         {experiencesData?.map((item, index) => (
           <div
-            className={`group container opacity-0 ${
+            className={`group  opacity-0 ${
               isSectionVisible && "animate-movedown"
             } w-full relative left-0 lg:odd:left-0 lg:even:left-1/2 lg:w-1/2 py-3 pl-20 pr-6 lg:pl-12 lg:pr-12 `}
             style={{ animationDelay: `${index * 0.5}s` }}

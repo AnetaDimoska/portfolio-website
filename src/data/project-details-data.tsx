@@ -20,6 +20,7 @@ export default function ProjectsDetailsData(id: number) {
     title: projectsDetails[key].title,
     description: t(`${key}.description`),
     link: projectsDetails[key].link,
+    visit_link: projectsDetails[key].visit_link,
     media: projectsDetails[key].media,
     technologies: projectsDetails[key].technologies,
     features: filteredFeatures,

@@ -15,5 +15,6 @@ export default function NavbarLinks() {
   return keys.map((key) => ({
     name: t(`${key}.name`),
     hash: links[key].hash,
+    icon: links[key].icon
   }));
 }

@@ -3,6 +3,10 @@
     "professional": "Professional",
     "personal": "Personal"
   },
+  "locale_switcher": {
+    "locale": "{locale, select, de {🇩🇪 De} en {🇺🇸 En} other {🇲🇰 Mk}}",
+    "locale_flags": "{locale, select, de {🇩🇪} en {🇺🇸} other {🇲🇰}}"
+  },
   "navbar": {
     "home": {
       "name": "Home"
@@ -39,7 +43,7 @@
       "description": "Online learning platform with user auth, leaderboard, AI assistant, dashboard for Brainster Academies students."
     },
     "brainster_library": {
-      "description": "Online learning platform with user auth, leaderboard, AI assistant, dashboard for Brainster Academies students."
+      "description": "Developed an online library for Brainster students with online reading, audio books, reviews, user auth, rating, and notes."
     },
     "generation_next": {
       "description": "Redesigned landing page for entry test application on Brainster College. Also, applied new design for the closing term page."

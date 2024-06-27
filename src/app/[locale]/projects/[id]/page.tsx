@@ -5,42 +5,59 @@ import { FiExternalLink } from "react-icons/fi";
 import ProjectGallery from "@/components/project-gallery";
 import ProjectsDetailsData from "@/data/project-details-data";
 
-
-export default function ProjectDetails({ params }: { params: { id: string, locale: string } }) {
+export default function ProjectDetails({
+  params,
+}: {
+  params: { id: string; locale: string };
+}) {
   const t = useTranslations("project_details_page");
-  const data = ProjectsDetailsData(+params.id)
+  const data = ProjectsDetailsData(+params.id);
   const project = data.find((project) => project.id === +params.id);
 
   return (
-    <section className="bg-black-100 py-20 relative">
-      <div className="absolute top-8 left-6">
-        <Link href="/" className="text-gray-900/60 dark:text-white/60 dark:hover:text-white/30 transition-all">
-          <MdArrowBack className="text-4xl " />
-        </Link>
-      </div>
-      <div className="min-h-screen w-[80%] mx-auto text-gray-950 dark:text-white/60">
+    <section className="bg-black-100 py-20 ">
+      <div className="min-h-screen w-[90%]  lg:max-w-[1400px] mx-auto text-gray-950 dark:text-white/60 relative">
+        <div className="absolute top-[-80px]  lg:top-0">
+          <Link
+            href="/"
+            className="text-gray-900/60 dark:text-white/60 dark:hover:text-white/30 transition-all"
+          >
+            <MdArrowBack className="text-3xl " />
+          </Link>
+        </div>
         {/* ------- Header ----------- */}
         <header>
-          <h2 className="text-[45px] leading-[52px] mt-6 lg:mt-0 xl:text-7xl text-center dark:text-white/60">
+          <h2 className="text-[38px] leading-[52px] mt-6 lg:mt-0 xl:text-7xl text-center dark:text-white/60">
             {project?.title}
           </h2>
           <p className="lg:w-1/2 mx-auto text-center mt-6">
             {project?.description}
           </p>
-          <a href={project?.link} target="_blank" className="text-center flex justify-center items-center gap-2 mt-3 text-purple-500/80 hover:text-purple-500/60 dark:text-purple-300/80 dark:hover:text-purple-300/60">Visit web app <FiExternalLink /></a>
+          {project?.link ? (
+            <a
+              href={project?.link}
+              target="_blank"
+              className="text-center flex justify-center items-center gap-2 mt-3 text-purple-500/80 hover:text-purple-500/60 dark:text-purple-300/80 dark:hover:text-purple-300/60"
+            >
+              {project.visit_link}
+              <FiExternalLink />
+            </a>
+          ) : (
+            ""
+          )}
         </header>
         <div className="grid grid-cols-1 xxxl:grid-cols-3 gap-8 mt-12 lg:mt-20">
           {/* <!-- Project Description Card --> */}
           <div className="shadow-md  bg-white/35 rounded-xl p-6 dark:bg-white/15">
             <h3 className="text-2xl font-semibold text-gray-900  dark:text-white/60">
-            {t('project_description')}
+              {t("project_description")}
             </h3>
             <p className="mt-4 leading-relaxed">{project?.info}</p>
           </div>
           {/* <!-- Key Features Card --> */}
           <div className="shadow-md  bg-white/35 rounded-xl p-6 relative overflow-hidden dark:bg-white/15">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4 dark:text-white/60">
-            {t('key_features')}
+              {t("key_features")}
             </h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +107,7 @@ export default function ProjectDetails({ params }: { params: { id: string, local
           {/* <!-- Technologies Used Card --> */}
           <div className="shadow-md  bg-white/35 rounded-xl p-6 dark:bg-white/15">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4 dark:text-white/60">
-            {t('technologies')}
+              {t("technologies")}
             </h3>
             <ul className="flex flex-wrap gap-2">
               {project?.technologies?.map((tech) => (
@@ -107,15 +124,17 @@ export default function ProjectDetails({ params }: { params: { id: string, local
 
         <div className=" mt-6 ">
           <div className="lg:flex  shadow-md bg-white/35 rounded-xl p-6 lg:px-6 lg:py-16 dark:bg-white/15">
+            {/* <!-- My Role --> */}
             <div className="lg:w-1/2 lg:border-r border-r-gray-400 dark:border-r-gray-400/60">
-              <h3 className="text-xl font-semibold text-gray-900  mb-4 dark:text-white/60">
-              {t('my_role')}
+              <h3 className="text-2xl font-semibold text-gray-900  mb-4 dark:text-white/60">
+                {t("my_role")}
               </h3>
               <p className="w-[80%]">{project?.role}</p>
             </div>
+            {/* <!-- Development process--> */}
             <div className="mt-10 lg:mt-0 lg:w-1/2 flex flex-col items-end">
-              <h3 className="text-xl font-semibold text-gray-900  mb-4 dark:text-white/60">
-              {t('dev_process')}
+              <h3 className="text-2xl font-semibold text-gray-900  mb-4 dark:text-white/60">
+                {t("dev_process")}
               </h3>
               <p className="w-[80%] text-right">
                 {project?.development_process}

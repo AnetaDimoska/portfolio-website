@@ -21,7 +21,7 @@ export default function Projects({ locale } : { locale: string}) {
       className="mt-24 md:mt-32 xxl:w-11/12 xxxl:w-[68%] mx-auto scroll-mt-32"
     >
       <SectionHeading> {t('heading')}</SectionHeading>
-      <div className="grid grid-cols-1 md:grid-cols-2 xxl:grid-cols-3 p-4 lg:p-0 gap-4 xl:gap-10 mt-6 md:mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 xxl:grid-cols-3 p-4 lg:p-0 gap-4 xl:gap-10 md:mt-14">
 
         {projects.map((project) => (
           <Link href={`/${locale}/projects/${project.id.toString()}`} key={project.id}>

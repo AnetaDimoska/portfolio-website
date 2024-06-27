@@ -7,6 +7,8 @@ import { Toaster } from "react-hot-toast";
 import ActiveSectionContextProvider from "../../context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
 import ThemeSwitch from "@/components/theme-switch";
+import Switchers from "@/components/switchers";
+import ScrollToTop from "@/components/scroll-to-top";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,7 +46,8 @@ export default async function RootLayout({
                 left: 50,
               }}
             />
-            <ThemeSwitch />
+           <Switchers />
+           <ScrollToTop />
           </ThemeContextProvider>
         </NextIntlClientProvider>
       </body>

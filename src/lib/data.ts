@@ -40,24 +40,36 @@ import { IoMdSwitch } from "react-icons/io";
 import { CiSettings } from "react-icons/ci";
 import { MdLanguage } from "react-icons/md";
 import { LuLayoutDashboard } from "react-icons/lu";
+import { TiHome } from "react-icons/ti";
+import { FaBusinessTime } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaAddressCard } from "react-icons/fa";
+import { FaPaperPlane } from "react-icons/fa";
+import { HiViewGrid } from "react-icons/hi";
 
 export const links = {
   home: {
+    icon: React.createElement(TiHome),
     hash: "#home",
   },
   projects: {
+    icon: React.createElement(HiViewGrid),
     hash: "#projects",
   },
   experience: {
+    icon: React.createElement(FaBusinessTime),
     hash: "#experience",
   },
   skills: {
+    icon: React.createElement(FaLaptopCode),
     hash: "#skills",
   },
   about: {
+    icon: React.createElement(FaAddressCard),
     hash: "#about",
   },
   contact: {
+    icon: React.createElement(FaPaperPlane),
     hash: "#contact",
   },
 };
@@ -197,6 +209,7 @@ export const projectsDetails = {
   brainster_learn: {
     id: 1,
     title: "Brainster Learn",
+    visit_link: "learn.brainster.co",
     link: "https://learn.brainster.co/",
     technologies: [
       "ReactJs",
@@ -262,6 +275,7 @@ export const projectsDetails = {
   brainster_library: {
     id: 2,
     title: "Brainster Library",
+    visit_link: "library.next.edu.mk",
     link: "https://library.next.edu.mk/",
     technologies: ["ReactJs", "Styled Components", "Axios"],
     media: {
@@ -311,6 +325,7 @@ export const projectsDetails = {
   generation_next: {
     id: 3,
     title: "Generation Next",
+    visit_link: "generation.next.edu.mk",
     link: "https://generation.next.edu.mk/",
     technologies: ["ReactJs", "Styled Components", "Axios"],
     media: {
@@ -345,6 +360,7 @@ export const projectsDetails = {
   rjk_korchagin: {
     id: 4,
     title: "RJK Korchagin",
+    visit_link: "rjk.edu.mk",
     link: "https://rjk.edu.mk/",
     technologies: ["ReactJs", "Styled Components", "Axios"],
     media: {
@@ -398,7 +414,8 @@ export const projectsDetails = {
   portfolio: {
     id: 5,
     title: "Aneta's Portfolio",
-    link: "https://rjk.edu.mk/",
+    visit_link: null,
+    link: null,
     technologies: ["Next JS", "TypeScript", "Tailwind", "Resend"],
     media: {
       images: [

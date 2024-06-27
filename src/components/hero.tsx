@@ -23,52 +23,67 @@ export default function Hero() {
       <div className="block mt-14 md:mt-28 xxxl:mt-40  xxl:w-11/12 xxl:ml-auto xxxl:w-10/12">
         <div className="relative sm:block w-full xxl:flex xxl:justify-between">
           <div className="relative sm:static w-full  md:h-[65vh] xxl:h-auto">
-            <FlowerIllustration />
+            <div className="text-[20px]">
+              <FlowerIllustration />
+            </div>
 
-            <h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl hidden-before-animation animate-slideDeskFromTop">
+            <h1 className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] md:text-4xl hidden-before-animation animate-slideDeskFromTop">
               {t.rich("greeting", {
                 p: (chunks) => <p>{chunks}</p>,
                 strong: (chunks) => <strong>{chunks}</strong>,
               })}
             </h1>
-            <p className=" w-full lg:w-4/5 xxxl:w-2/3 mb-10 mt-2  px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl hidden-before-animation animate-slideFromBottom">
+            <p className=" w-full lg:w-4/5 xxxl:w-2/3 mb-10 mt-2  px-4 text-xl font-medium !leading-[1.5] md:text-2xl hidden-before-animation animate-slideFromBottom">
               {t.rich("headline", {
                 p: (chunks) => <p>{chunks}</p>,
                 strong: (chunks) => <strong>{chunks}</strong>,
               })}
             </p>
-
-            <div className="flex items-center gap-3 mt-[250px] pl-[1rem] hidden-before-animation animate-slideHeroButtons z-20 relative sm:mt-0  ">
+            {/* ------------------- CTA Buttons ---------------- */}
+            <div className="md:grid md:grid-cols-[1fr_2fr] items-center gap-3 mt-[100px] px-[1rem] hidden-before-animation animate-slideHeroButtons z-20 relative md:mt-0  ">
+              {/* Connect button */}
               <Link
                 href="#contact"
-                className="group bg-darkBlue w-auto text-white text-sm px-2 md:px-7 py-2 md:py-3 inline-flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                className="group bg-darkBlue w-full text-white text-center text-sm py-4 md:py-4 flex justify-center items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
                 onClick={() => {
                   setActiveSection("Contact");
                 }}
               >
-               {t('cta_connect')}
+                {t("cta_connect")}
                 <FaArrowRightLong className="opacity-70 group-hover:translate-x-1/2 transition" />
               </Link>
-              <a
-                className="group bg-white px-2 md:px-7 py-2 md:py-3 text-sm  inline-flex  items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-transparent/15"
-                href="/cv.pdf"
-                download
-              >
-                   {t('cta_download')} <FiDownload />
-              </a>
-              <a href="https://github.com/AnetaDimoska" target="_blank">
-                <FaGithub className="text-xl cursor-pointer opacity-70 hover:scale-110  active:scale-105  transition" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/aneta-dimoska/"
-                target="_blank"
-              >
-                <FaLinkedinIn className="text-xl cursor-pointer opacity-70 hover:scale-110  active:scale-105  transition" />
-              </a>
+              <div className="w-full grid justify-center md:justify-start text-center mt-3 md:mt-0 grid-cols-[2fr_1fr] md:grid-cols-[1fr_1fr] gap-x-3">
+                {/* Download button */}
+                <a
+                  className="group bg-white px-2 md:px-7 py-3 md:py-3 text-sm inline-flex justify-center items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border-black dark:bg-transparent/15"
+                  href="/cv.pdf"
+                  download
+                >
+                  {t("cta_download")} <FiDownload />
+                </a>
+                <div className="flex justify-center items-center md:justify-start gap-x-3">
+                  {/* Github link */}
+                  <a
+                    href="https://github.com/AnetaDimoska"
+                    target="_blank"
+                    className="flex justify-center items-center w-8 h-8 rounded-full bg-white dark:bg-black/10 "
+                  >
+                    <FaGithub className="text-xl cursor-pointer opacity-70 hover:scale-110  active:scale-105  transition" />
+                  </a>
+                  {/* LinkedIn link */}
+                  <a
+                    href="https://www.linkedin.com/in/aneta-dimoska/"
+                    target="_blank"
+                    className="flex justify-center items-center w-8 h-8 rounded-full bg-white dark:bg-black/10"
+                  >
+                    <FaLinkedinIn className="text-xl cursor-pointer opacity-70 hover:scale-110  active:scale-105  transition" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="w-full   px-4 opacity-25 z-[-1] xl:opacity-100 xl:z-auto">
+          <div className="w-full px-4 opacity-25 z-[-1] xl:opacity-100 xl:z-auto">
             <IntroIllustration />
           </div>
         </div>

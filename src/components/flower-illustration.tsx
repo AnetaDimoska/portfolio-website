@@ -8,7 +8,7 @@ export default function FlowerIllustration() {
         viewBox="0 0 200 200"
         version="1.1"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        className="absolute top-[-50px] left-[-80px] hidden-before-animation animate-wiggle"
+        className="z-50 w-[150px] h-[150px] md:w-[200px] md:h-[200px]  absolute top-[-63px] left-[-30px] md:left-[-80px] hidden-before-animation animate-wiggle"
       >
         <path
           fill='url("#SvgjsLinearGradient3748")'

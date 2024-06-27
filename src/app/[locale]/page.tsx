@@ -10,7 +10,7 @@ import Skills from "@/components/skills";
 export default function Home({params}: { params: {locale: string }}) {
 
   return (
-    <main className="w-full pt-28 sm:pt-24 ">
+    <main className="w-full pt-[96px] sm:pt-24 ">
       <Navbar />
       <Hero />
       <Projects locale={params.locale}/>
