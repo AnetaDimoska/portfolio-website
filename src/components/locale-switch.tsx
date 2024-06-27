@@ -21,7 +21,6 @@ export default function LocaleSwitcher() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log("locale", locales);
 
   return (
     <LocaleSwitcherSelect defaultValue={locale} >
