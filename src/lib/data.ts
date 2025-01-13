@@ -419,13 +419,13 @@ export const projectsDetails = {
     technologies: ["Next JS", "TypeScript", "Tailwind", "Resend"],
     media: {
       images: [
-        "/learn/01.png",
-        "/learn/02.png",
-        "/learn/03.png",
-        "/learn/04.png",
-        "/learn/05.png",
-        "/learn/06.png",
-        "/learn/07.png",
+        "/portfolio/01.png",
+        "/portfolio/02.png",
+        "/portfolio/03.png",
+        "/portfolio/04.png",
+        "/portfolio/05.png",
+        "/portfolio/06.png",
+        "/portfolio/07.png",
       ],
     },
     features: [

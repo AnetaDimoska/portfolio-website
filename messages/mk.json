@@ -30,7 +30,7 @@
   "hero": {
     "section_name": "Дома",
     "greeting": " Здраво, јас сум Анета, <p><strong>front-end developer</strong></p>",
-    "headline": "Со <strong>повеќе од две години</strong> искуство во тех индустријата, изработувам респонзивни <strong>веб апликации и сајтови</strong> користејќи ги најновите технологии како <strong>React</strong> и <strong>Next.js</strong>.",
+    "headline": "Со <strong>три годишно</strong> искуство во тех индустријата, изработувам респонзивни <strong>веб апликации и сајтови</strong> користејќи ги најновите технологии како <strong>React</strong> и <strong>Next.js</strong>.",
     "cta_connect": "Контакт",
     "cta_download": "Преземи CV"
   },
