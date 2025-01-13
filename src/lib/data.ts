@@ -424,8 +424,7 @@ export const projectsDetails = {
         "/portfolio/03.png",
         "/portfolio/04.png",
         "/portfolio/05.png",
-        "/portfolio/06.png",
-        "/portfolio/07.png",
+        "/portfolio/06.png"
       ],
     },
     features: [

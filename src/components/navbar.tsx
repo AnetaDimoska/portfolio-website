@@ -4,7 +4,6 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import NavbarLinks from "@/data/navbar-link";
 import { useTranslations } from "next-intl";
 
-// Comment
 
 export default function Navbar() {
 
